@@ -6,7 +6,7 @@
 #    By: ansebast <ansebast@student.42luanda.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/16 09:55:50 by ansebast          #+#    #+#              #
-#    Updated: 2025/03/16 09:59:22 by ansebast         ###   ########.fr        #
+#    Updated: 2025/03/16 15:14:26 by ansebast         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ FLAGS = -Wall -Wextra -Werror --std=c++98
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): $(OBJS)
 	c++ $(FLAGS) $(OBJS) -o $(NAME)
 
 clean:
