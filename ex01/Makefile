@@ -6,11 +6,11 @@
 #    By: ansebast <ansebast@student.42luanda.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/16 09:55:50 by ansebast          #+#    #+#              #
-#    Updated: 2025/03/16 15:35:15 by ansebast         ###   ########.fr        #
+#    Updated: 2025/03/16 16:37:17 by ansebast         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = zombie
+NAME = horde
 SRC = Zombie.cpp zombieHorde.cpp main.cpp
 OBJS = $(SRC:.cpp=.o)
 FLAGS = -Wall -Wextra -Werror --std=c++98
