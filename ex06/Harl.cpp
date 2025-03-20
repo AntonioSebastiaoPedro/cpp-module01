@@ -6,7 +6,7 @@
 /*   By: ansebast <ansebast@student.42luanda.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 00:19:06 by ansebast          #+#    #+#             */
-/*   Updated: 2025/03/19 07:34:41 by ansebast         ###   ########.fr       */
+/*   Updated: 2025/03/20 21:36:05 by ansebast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void Harl::warning( void )
 
 void Harl::error( void )
 {
-	std::cout << RED << "[ INFO ]\n" << RESET;
+	std::cout << RED << "[ ERROR ]\n" << RESET;
 	std::cout << "Segmentation fault!\n";
 	std::cout << "Try using valgrind to identify the problem.\n";
 	std::cout << std::endl;
@@ -47,7 +47,7 @@ void Harl::error( void )
 
 void Harl::switch_off( void )
 {
-	std::cout << "[ Probably complaining about insignificant problems ]\n";
+	std::cout << WHITE << "[ Keep pushing, 42 is all about persistence! ]\n" << RESET;
 }
 
 void Harl::complain( int level )
@@ -72,6 +72,5 @@ void Harl::complain( int level )
 	default:
 		ptr = &Harl::switch_off;
 		(this->*ptr)();
-		break;
 	}
 }

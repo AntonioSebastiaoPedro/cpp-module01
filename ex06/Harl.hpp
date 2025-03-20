@@ -6,7 +6,7 @@
 /*   By: ansebast <ansebast@student.42luanda.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 00:19:02 by ansebast          #+#    #+#             */
-/*   Updated: 2025/03/19 07:25:27 by ansebast         ###   ########.fr       */
+/*   Updated: 2025/03/20 21:35:32 by ansebast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,14 @@
 # define GREEN   "\033[32m"
 # define YELLOW  "\033[33m"
 # define BLUE    "\033[34m"
+# define WHITE	 "\033[37m"
 
-# define DEBUG 0
-# define INFO 1
-# define WARNING 2
-# define ERROR 3
+enum LogLevel {
+	DEBUG,
+	INFO,
+	WARNING,
+	ERROR
+};
 
 class Harl
 {
